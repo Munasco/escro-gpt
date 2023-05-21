@@ -1,17 +1,17 @@
 import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Desktop1: FunctionComponent = () => {
+const Desktop6b: FunctionComponent = () => {
   const navigate = useNavigate();
 
-  const onDesktop6aContainerClick = useCallback(() => {
-    navigate("/desktop7a");
+  const onDesktop6bContainerClick = useCallback(() => {
+    navigate("/desktop7b");
   }, [navigate]);
 
   return (
     <div
       className="relative bg-white w-full h-[833px] overflow-hidden cursor-pointer text-center text-sm text-white font-proxima-nova"
-      onClick={onDesktop6aContainerClick}
+      onClick={onDesktop6bContainerClick}
     >
       <div className="absolute top-[0px] left-[0px] w-[1440px] h-[70px] overflow-hidden">
         <img
@@ -29,12 +29,12 @@ const Desktop1: FunctionComponent = () => {
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.86%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-21.svg"
+            src="/vector-25.svg"
           />
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[27.94%] right-[5.74%] bottom-[0.52%] left-[61.01%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-3.svg"
+            src="/vector-32.svg"
           />
           <div className="absolute top-[32.1%] left-[59.11%] font-extrabold">
             GPT
@@ -112,12 +112,12 @@ const Desktop1: FunctionComponent = () => {
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.86%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-21.svg"
+            src="/vector-25.svg"
           />
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[27.94%] right-[5.74%] bottom-[0.52%] left-[61.01%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-3.svg"
+            src="/vector-32.svg"
           />
           <div className="absolute top-[32.1%] left-[59.11%] font-extrabold">
             GPT
@@ -179,8 +179,8 @@ const Desktop1: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className="absolute top-[283px] left-[356px] w-[728px] h-[198px] text-base text-black">
-        <div className="absolute top-[132px] left-[62px] w-[604px] h-[66px]">
+      <div className="absolute top-[283px] left-[380px] w-[681px] h-[198px] text-base text-black">
+        <div className="absolute top-[132px] left-[38px] w-[604px] h-[66px]">
           <img
             className="absolute top-[29px] left-[16px] w-[554px] h-[17px]"
             alt=""
@@ -211,20 +211,20 @@ const Desktop1: FunctionComponent = () => {
             src="/markerpin01.svg"
           />
         </div>
-        <b className="absolute top-[0px] left-[calc(50%_-_364px)] text-xl">
+        <b className="absolute top-[0px] left-[calc(50%_-_340.5px)] text-xl">
           Please wait while Artificial Intelligence verifies the authenticity of
-          your purchase.
+          your sale.
         </b>
-        <div className="absolute h-[23.1%] w-[6.27%] top-[21.21%] right-[46.89%] bottom-[55.69%] left-[46.84%] text-[13.43px]">
+        <div className="absolute h-[23.1%] w-[6.7%] top-[21.21%] right-[46.75%] bottom-[55.69%] left-[46.55%] text-[13.43px]">
           <img
             className="absolute h-[71.55%] w-[64.08%] top-[0.52%] right-[24.85%] bottom-[27.94%] left-[11.07%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-22.svg"
+            src="/vector-26.svg"
           />
           <img
             className="absolute h-[71.55%] w-[64.08%] top-[27.94%] right-[11.07%] bottom-[0.52%] left-[24.85%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-31.svg"
+            src="/vector-33.svg"
           />
           <div className="absolute top-[32.1%] left-[21.18%] font-extrabold">
             GPT
@@ -235,4 +235,4 @@ const Desktop1: FunctionComponent = () => {
   );
 };
 
-export default Desktop1;
+export default Desktop6b;

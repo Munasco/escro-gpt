@@ -5,11 +5,11 @@ const Desktop2: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onFrameContainer5Click = useCallback(() => {
-    navigate("/desktop");
+    navigate("/desktop4a");
   }, [navigate]);
 
   const onFrameContainer8Click = useCallback(() => {
-    navigate("/desktop1");
+    navigate("/desktop6a");
   }, [navigate]);
 
   return (

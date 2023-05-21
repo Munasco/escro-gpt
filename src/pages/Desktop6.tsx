@@ -5,7 +5,7 @@ const Desktop6: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onCreateContractClick = useCallback(() => {
-    navigate("/desktop");
+    navigate("/desktop2");
   }, [navigate]);
 
   return (

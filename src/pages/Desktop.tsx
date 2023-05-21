@@ -5,7 +5,7 @@ const Desktop: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onFrameContainer3Click = useCallback(() => {
-    navigate("/desktop");
+    navigate("/desktop2");
   }, [navigate]);
 
   return (

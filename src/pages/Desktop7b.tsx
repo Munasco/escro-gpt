@@ -1,18 +1,15 @@
 import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Desktop1: FunctionComponent = () => {
+const Desktop7b: FunctionComponent = () => {
   const navigate = useNavigate();
 
-  const onDesktop6aContainerClick = useCallback(() => {
-    navigate("/desktop7a");
+  const onFrameContainer3Click = useCallback(() => {
+    navigate("/desktop2");
   }, [navigate]);
 
   return (
-    <div
-      className="relative bg-white w-full h-[833px] overflow-hidden cursor-pointer text-center text-sm text-white font-proxima-nova"
-      onClick={onDesktop6aContainerClick}
-    >
+    <div className="relative bg-white w-full h-[833px] overflow-hidden text-center text-sm text-white font-proxima-nova">
       <div className="absolute top-[0px] left-[0px] w-[1440px] h-[70px] overflow-hidden">
         <img
           className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
@@ -27,14 +24,14 @@ const Desktop1: FunctionComponent = () => {
         </div>
         <div className="absolute top-[12px] left-[28px] w-[88px] h-[45.74px] text-[13.43px]">
           <img
-            className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.86%] max-w-full overflow-hidden max-h-full"
+            className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.87%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-21.svg"
+            src="/vector-24.svg"
           />
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[27.94%] right-[5.74%] bottom-[0.52%] left-[61.01%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-3.svg"
+            src="/vector-32.svg"
           />
           <div className="absolute top-[32.1%] left-[59.11%] font-extrabold">
             GPT
@@ -110,14 +107,14 @@ const Desktop1: FunctionComponent = () => {
         </div>
         <div className="absolute top-[12px] left-[28px] w-[88px] h-[45.74px] text-[13.43px]">
           <img
-            className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.86%] max-w-full overflow-hidden max-h-full"
+            className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.87%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-21.svg"
+            src="/vector-24.svg"
           />
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[27.94%] right-[5.74%] bottom-[0.52%] left-[61.01%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-3.svg"
+            src="/vector-32.svg"
           />
           <div className="absolute top-[32.1%] left-[59.11%] font-extrabold">
             GPT
@@ -179,8 +176,8 @@ const Desktop1: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className="absolute top-[283px] left-[356px] w-[728px] h-[198px] text-base text-black">
-        <div className="absolute top-[132px] left-[62px] w-[604px] h-[66px]">
+      <div className="absolute top-[203px] left-[300px] w-[840px] h-[216px] text-base text-black">
+        <div className="absolute top-[150px] left-[118px] w-[604px] h-[66px]">
           <img
             className="absolute top-[29px] left-[16px] w-[554px] h-[17px]"
             alt=""
@@ -211,28 +208,20 @@ const Desktop1: FunctionComponent = () => {
             src="/markerpin01.svg"
           />
         </div>
-        <b className="absolute top-[0px] left-[calc(50%_-_364px)] text-xl">
-          Please wait while Artificial Intelligence verifies the authenticity of
-          your purchase.
+        <b className="absolute top-[0px] left-[calc(50%_-_420px)] text-31xl">
+          Congratulations! Your sale is verified.
         </b>
-        <div className="absolute h-[23.1%] w-[6.27%] top-[21.21%] right-[46.89%] bottom-[55.69%] left-[46.84%] text-[13.43px]">
-          <img
-            className="absolute h-[71.55%] w-[64.08%] top-[0.52%] right-[24.85%] bottom-[27.94%] left-[11.07%] max-w-full overflow-hidden max-h-full"
-            alt=""
-            src="/vector-22.svg"
-          />
-          <img
-            className="absolute h-[71.55%] w-[64.08%] top-[27.94%] right-[11.07%] bottom-[0.52%] left-[24.85%] max-w-full overflow-hidden max-h-full"
-            alt=""
-            src="/vector-31.svg"
-          />
-          <div className="absolute top-[32.1%] left-[21.18%] font-extrabold">
-            GPT
-          </div>
+      </div>
+      <div
+        className="absolute top-[calc(50%_+_185.5px)] left-[calc(50%_-_195px)] rounded-8xs bg-mediumseagreen w-[390px] h-[59px] overflow-hidden flex flex-col py-[25px] px-[82px] box-border items-center justify-center cursor-pointer text-left text-xl text-gray-300"
+        onClick={onFrameContainer3Click}
+      >
+        <div className="flex flex-col items-center justify-start">
+          <b className="relative">Create Another Contract</b>
         </div>
       </div>
     </div>
   );
 };
 
-export default Desktop1;
+export default Desktop7b;

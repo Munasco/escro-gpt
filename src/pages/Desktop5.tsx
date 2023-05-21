@@ -5,7 +5,11 @@ const Desktop5: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onFrameContainer2Click = useCallback(() => {
-    navigate("/desktop3");
+    navigate("/desktop3a");
+  }, [navigate]);
+
+  const onFrameContainer5Click = useCallback(() => {
+    navigate("/desktop3b");
   }, [navigate]);
 
   return (
@@ -90,10 +94,10 @@ const Desktop5: FunctionComponent = () => {
       <b className="absolute top-[121px] left-[54px] text-31xl text-left">
         Create Contract
       </b>
-      <b className="absolute top-[237.5px] left-[calc(50%_-_291px)] text-xl">
+      <b className="absolute top-[237.5px] left-[429px] text-xl">
         Hi! We’re so glad you’re here. What are you looking to do today?
       </b>
-      <button className="cursor-pointer [border:none] p-0 bg-[transparent] absolute top-[334px] left-[calc(50%_-_298px)] flex flex-row items-end justify-between">
+      <button className="cursor-pointer [border:none] p-0 bg-[transparent] absolute top-[334px] left-[422px] flex flex-row items-end justify-between">
         <div
           className="flex flex-col items-center justify-center gap-[40px] cursor-pointer"
           onClick={onFrameContainer2Click}
@@ -111,7 +115,10 @@ const Desktop5: FunctionComponent = () => {
             </div>
           </button>
         </div>
-        <div className="flex flex-col items-center justify-start gap-[30px]">
+        <div
+          className="flex flex-col items-center justify-start gap-[30px] cursor-pointer"
+          onClick={onFrameContainer5Click}
+        >
           <img
             className="relative w-[182px] h-[182px] overflow-hidden shrink-0"
             alt=""

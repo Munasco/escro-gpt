@@ -1,15 +1,23 @@
 import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Desktop3: FunctionComponent = () => {
+const Desktop4b: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onFrameContainer4Click = useCallback(() => {
-    navigate("/desktop3a");
+    navigate("/desktop3b");
   }, [navigate]);
 
   const onFrameContainer5Click = useCallback(() => {
-    navigate("/");
+    navigate("/desktop5b");
+  }, [navigate]);
+
+  const onWhatAreTheseFeesClick = useCallback(() => {
+    navigate("/desktop4b");
+  }, [navigate]);
+
+  const onWhatAreTheseFees1Click = useCallback(() => {
+    navigate("/desktop4b");
   }, [navigate]);
 
   return (
@@ -30,12 +38,12 @@ const Desktop3: FunctionComponent = () => {
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[0.52%] right-[12.89%] bottom-[27.94%] left-[53.87%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-23.svg"
+            src="/vector-27.svg"
           />
           <img
             className="absolute h-[71.55%] w-[33.24%] top-[27.94%] right-[5.74%] bottom-[0.52%] left-[61.01%] max-w-full overflow-hidden max-h-full"
             alt=""
-            src="/vector-3.svg"
+            src="/vector-32.svg"
           />
           <div className="absolute top-[32.1%] left-[59.11%] font-extrabold">
             GPT
@@ -115,65 +123,47 @@ const Desktop3: FunctionComponent = () => {
       </div>
       <div className="absolute top-[213px] left-[55px] w-[371px] h-[19px] flex flex-row items-center justify-start gap-[83px]">
         <b className="relative">Contract ID</b>
-        <div className="relative text-gray-200">
-          jellybeansfirecomputercoffee
-        </div>
+        <div className="relative text-gray-200">littlealsoweedgrapebone</div>
       </div>
       <div className="absolute top-[299px] left-[55px] w-[223px] h-[19px] flex flex-row items-center justify-start gap-[123px]">
         <b className="relative">Name</b>
         <div className="relative text-gray-200">Allen Lu</div>
       </div>
-      <div className="absolute top-[302px] left-[1081px] w-[305px] h-[19px] flex flex-row items-center justify-start gap-[77px]">
-        <b className="relative">Name</b>
-        <div className="relative text-gray-200">Textbook (E-Book Version)</div>
-      </div>
-      <div className="absolute top-[324px] left-[1081px] w-[182px] h-[19px] flex flex-row items-center justify-start gap-[83px]">
-        <b className="relative">Price</b>
-        <div className="relative text-gray-200">18 USDC</div>
-      </div>
-      <div className="absolute top-[346px] left-[1081px] w-[310px] h-[57px] flex flex-row items-start justify-start gap-[37px]">
-        <b className="relative">Description</b>
-        <div className="relative text-gray-200">
-          <p className="m-0">Fifth edition of Chemistry</p>
-          <p className="m-0">textbook. Very high quality,</p>
-          <p className="m-0">{`loved by many. `}</p>
-        </div>
-      </div>
       <div className="absolute top-[321px] left-[55px] w-[321px] h-[19px] flex flex-row items-center justify-start gap-[86px]">
         <b className="relative">Account ID</b>
         <div className="relative text-gray-200">hipposexitlaughhappy</div>
       </div>
-      <div className="absolute top-[431px] left-[55px] w-[250px] h-[19px] flex flex-row items-center justify-start gap-[123px]">
+      <div className="absolute top-[431px] left-[55px] w-[296px] h-[19px] flex flex-row items-center justify-start gap-[123px]">
         <b className="relative">Name</b>
-        <div className="relative text-gray-200">Kelly Huang</div>
+        <div className="relative text-gray-200">Kyla Henderson</div>
       </div>
       <div className="absolute top-[453px] left-[55px] w-[296px] h-[19px] flex flex-row items-center justify-start gap-[86px]">
         <b className="relative">Account ID</b>
-        <div className="relative text-gray-200">lifehellowaterchilly</div>
+        <div className="relative text-gray-200">byecherryrocktree</div>
       </div>
       <div className="absolute top-[257px] left-[771px] rounded-6xs bg-gainsboro-100 w-[174px] overflow-hidden flex flex-col py-1.5 px-[13px] box-border items-start justify-start text-xl">
         <div className="flex flex-row items-center justify-center">
           <b className="relative">Item</b>
         </div>
       </div>
-      <div className="absolute top-[257px] left-[41px] rounded-6xs bg-gainsboro-100 w-[571px] overflow-hidden flex flex-col py-1.5 px-[13px] box-border items-start justify-start text-xl">
+      <div className="absolute top-[257px] left-[41px] rounded-6xs bg-mediumseagreen w-[571px] overflow-hidden flex flex-col py-1.5 px-[13px] box-border items-start justify-start text-xl">
         <div className="flex flex-row items-center justify-center gap-[10px]">
           <img
             className="relative w-6 h-6 overflow-hidden shrink-0"
             alt=""
             src="/tag03.svg"
           />
-          <b className="relative">Seller</b>
+          <b className="relative">Seller (You)</b>
         </div>
       </div>
-      <div className="absolute top-[386px] left-[41px] rounded-6xs bg-mediumseagreen w-[571px] overflow-hidden flex flex-col py-1.5 px-[13px] box-border items-start justify-center text-xl">
+      <div className="absolute top-[386px] left-[41px] rounded-6xs bg-gainsboro-100 w-[571px] overflow-hidden flex flex-col py-1.5 px-[13px] box-border items-start justify-center text-xl">
         <div className="flex flex-row items-center justify-center gap-[10px]">
           <img
             className="relative w-[21.89px] h-[22px]"
             alt=""
             src="/icon.svg"
           />
-          <b className="relative">Buyer (You)</b>
+          <b className="relative">Buyer</b>
         </div>
       </div>
       <div className="absolute top-[500px] left-[50px] w-[475px] h-6 flex flex-row items-center justify-start gap-[10px] text-red">
@@ -186,11 +176,6 @@ const Desktop3: FunctionComponent = () => {
           Verify that this information is true before clicking “Continue”.
         </b>
       </div>
-      <img
-        className="absolute top-[302px] left-[771px] rounded-[15px] w-[264px] h-[337px] object-cover"
-        alt=""
-        src="/image-1@2x.png"
-      />
       <div
         className="absolute top-[688px] left-[39px] flex flex-row items-center justify-center gap-[7px] cursor-pointer text-gray-200"
         onClick={onFrameContainer4Click}
@@ -218,8 +203,57 @@ const Desktop3: FunctionComponent = () => {
         alt=""
         src="/markerpin01.svg"
       />
+      <div
+        className="absolute top-[calc(50%_-_279.5px)] left-[calc(50%_-_262px)] rounded-6xs box-border w-[154px] h-[31px] overflow-hidden flex flex-row py-1.5 px-[13px] items-start justify-start cursor-pointer text-center border-[1px] border-solid border-silver"
+        onClick={onWhatAreTheseFeesClick}
+      >
+        <div className="w-[127px] flex flex-row items-center justify-center">
+          <div className="relative flex items-center justify-center w-[148px] shrink-0">
+            Save
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute top-[calc(50%_-_114.5px)] left-[calc(50%_+_51px)] rounded-6xs box-border w-[267px] h-[337px] overflow-hidden flex flex-row py-1.5 px-[13px] items-center justify-center cursor-pointer text-center border-[1px] border-dashed border-silver"
+        onClick={onWhatAreTheseFees1Click}
+      >
+        <div className="relative flex items-center justify-center w-[148px] shrink-0">
+          Upload a File here!
+        </div>
+      </div>
+      <div className="absolute top-[301px] left-[1198px] rounded bg-gainsboro-100 w-[191px] h-5" />
+      <img
+        className="absolute top-[325px] left-[1198px] rounded w-[191px] h-5"
+        alt=""
+        src="/rectangle-23.svg"
+      />
+      <div className="absolute top-[349px] left-[1198px] rounded bg-gainsboro-100 w-[191px] h-[118px]" />
+      <div className="absolute top-[302px] left-[1081px] w-[305px] h-[19px] flex flex-row items-center justify-start gap-[77px]">
+        <b className="relative">Name</b>
+        <div className="relative text-gray-200 hidden">
+          Textbook (E-Book Version)
+        </div>
+      </div>
+      <div className="absolute top-[302px] left-[1081px] w-[305px] h-[19px] flex flex-row items-center justify-start gap-[77px]">
+        <b className="relative">Name</b>
+        <div className="relative text-gray-200 hidden">
+          Textbook (E-Book Version)
+        </div>
+      </div>
+      <div className="absolute top-[324px] left-[1081px] w-[182px] h-[19px] flex flex-row items-center justify-start gap-[83px]">
+        <b className="relative">Price</b>
+        <div className="relative text-gray-200 hidden">18 USDC</div>
+      </div>
+      <div className="absolute top-[346px] left-[1081px] w-[310px] h-[57px] flex flex-row items-start justify-start gap-[37px]">
+        <b className="relative">Description</b>
+        <div className="relative text-gray-200 hidden">
+          <p className="m-0">Fifth edition of Chemistry</p>
+          <p className="m-0">textbook. Very high quality,</p>
+          <p className="m-0">{`loved by many. `}</p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Desktop3;
+export default Desktop4b;
