@@ -5,11 +5,11 @@ const Desktop2: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onFrameContainer5Click = useCallback(() => {
-    navigate("/desktop1");
+    navigate("/desktop");
   }, [navigate]);
 
   const onFrameContainer8Click = useCallback(() => {
-    navigate("/desktop2");
+    navigate("/desktop1");
   }, [navigate]);
 
   return (
@@ -106,18 +106,14 @@ const Desktop2: FunctionComponent = () => {
         Create Contract
       </b>
       <b className="absolute top-[182px] left-[55px] text-xl">{`Me <> Kelly`}</b>
-      <b className="absolute top-[305px] left-[calc(50%_+_55px)]">
+      <b className="absolute top-[305px] left-[775px]">
         Click on a payment method to continue.
       </b>
-      <b className="absolute top-[213px] left-[calc(50%_+_51px)] text-center">
-        Details
-      </b>
-      <b className="absolute top-[213px] left-[calc(50%_+_312px)] text-center">
-        Payment
-      </b>
-      <b className="absolute top-[213px] left-[calc(50%_+_572px)] text-center">
-        Verification
-      </b>
+      <div className="absolute top-[213px] left-[771px] w-[604px] h-[19px] text-center">
+        <b className="absolute top-[0px] left-[0px]">Details</b>
+        <b className="absolute top-[0px] left-[261px]">Payment</b>
+        <b className="absolute top-[0px] left-[521px]">Verification</b>
+      </div>
       <div className="absolute top-[213px] left-[55px] w-[371px] h-[19px]">
         <b className="absolute top-[0px] left-[calc(50%_-_185.5px)]">
           Contract ID
