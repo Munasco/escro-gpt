@@ -1,0 +1,7 @@
+DEFINE_NEAR_METHOD(EscrowContract)
+DEFINE_NEAR_METHOD(approve_purchase)
+DEFINE_NEAR_METHOD(cancel_purchase)
+DEFINE_NEAR_METHOD(escrow_timeout_scan)
+DEFINE_NEAR_METHOD(internalPurchaseEscrow)
+DEFINE_NEAR_METHOD(purchase_in_escrow)
+DEFINE_NEAR_METHOD(view_pending_escrow)

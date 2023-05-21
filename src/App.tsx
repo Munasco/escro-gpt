@@ -4,6 +4,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import { useState } from "react";
 import Desktop2 from "./pages/Desktop2";
 import Desktop from "./pages/Desktop";
 import Desktop1 from "./pages/Desktop1";
@@ -19,6 +20,54 @@ import Desktop5b from "./pages/Desktop5b";
 import Desktop4b from "./pages/Desktop4b";
 import Desktop3b from "./pages/Desktop3b";
 import { useEffect } from "react";
+import { Wallet } from "./nearWallet";
+
+const CONTRACT_ADDRESS = process.env.CONTRACT_NAME;
+
+// When creating the wallet you can optionally ask to create an access key
+// Having the key enables to call non-payable methods without interrupting the user to sign
+const wallet = new Wallet({ createAccessKeyFor: CONTRACT_ADDRESS });
+
+export function LogIn() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const initialize = async () => {
+      const signedIn = await wallet.startUp();
+      setIsSignedIn(signedIn);
+    };
+
+    initialize();
+  }, []);
+
+  const handleLogin = async () => {
+    wallet.signIn();
+    const signedIn = await wallet.startUp();
+  };
+
+  const handleLogout = () => {
+    wallet.signOut();
+    // setAccountId(null);
+    // setIsSignedIn(false);
+  };
+
+  return (
+    <>
+      <button type="submit" title="Sign Out" onClick={() => wallet.signOut()} />
+
+      <main className="w-full">
+        {/* Login and Logout */}
+        {isSignedIn ? (
+          <div>
+            <h1>Logged in as: {wallet.accountId}</h1>
+            <button onClick={handleLogout}>Log out</button>
+          </div>
+        ) : (
+          <button onClick={handleLogin}>Log in with NEAR Wallet</button>
+        )}
+      </main>
+    </>
+  );
+}
 
 function App() {
   const action = useNavigationType();
